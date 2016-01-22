@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/menu/todo.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/menu/todo.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/menu/context_menu.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/menu/context_menu.xml"
+    }
+]

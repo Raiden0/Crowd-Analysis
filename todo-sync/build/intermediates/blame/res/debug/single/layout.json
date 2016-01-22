@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/dialog_new_task.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/layout/dialog_new_task.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/activity_todo.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/layout/activity_todo.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/task_item.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/layout/task_item.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/dialog_loading.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/res/layout/dialog_loading.xml"
+    },
+    {
+        "merged": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/res/layout/messenger_button_send_white_large.xml"
+    }
+]

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="facebookauthentication-1.0.2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/facebookauthentication/1.0.2/res" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/facebookauthentication/1.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.mobilefirstplatform.clientsdk.android/facebookauthentication/1.0.2/d53a1de074871a41aa0b4142b78cf0bb842699c0/facebookauthentication-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

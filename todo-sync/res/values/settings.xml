@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="default_user">36b80682-975e-4036-bba6-00494e4a2dbb-bluemix</string>
+    <string name="default_dbname">tasks</string>
+    <string name="default_api_key">tinglacterstratioutherai</string>
+    <string name="default_api_password">1a285bf9d47abb82681b2c113d9140d95f50d821</string>
+
+</resources>

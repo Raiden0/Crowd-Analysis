@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-android/0.15.5/2efd680cb025abc5c23148091d67e651a31e1c4a/cloudant-sync-datastore-android-0.15.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2efd680cb025abc5c23148091d67e651a31e1c4a">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/cloudant-sync-datastore-android-0.15.5_6ee29ed8d6c1623908f7bc674f8550983d7f105a.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/commons-io-2.4_19e8bdfdce09d433b1eb369e78846e3bfdeb734b.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.1.1/b01cc83e745fc4425a3968fafbf8e5b8254a6dd/jackson-annotations-2.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0b01cc83e745fc4425a3968fafbf8e5b8254a6dd">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/jackson-annotations-2.1.1_ba2e7450118948d221dd17c0b680cf9579dc6023.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-sync-datastore-core/0.15.5/1dd44210c068aeade17c42841778385387bac300/cloudant-sync-datastore-core-0.15.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1dd44210c068aeade17c42841778385387bac300">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/cloudant-sync-datastore-core-0.15.5_659b78ec6b90ad91b691ccb69ea9cb74561ef7a2.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.1/82ad1c5f92f6dcc6291f5c46ebacb975eaa844de/jackson-core-2.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="82ad1c5f92f6dcc6291f5c46ebacb975eaa844de">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/jackson-core-2.1.1_d49d1cad8fe70066842ec9fe5402bd157109966e.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.1.1/38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2/jackson-databind-2.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="38d2b3c0c89af5b937fd98c3e558bf6b58c14aa2">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/jackson-databind-2.1.1_ce167d74a0dfd8452d101894aee6aa24e954a131.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/commons-codec-1.10_04bcfa1ab46fac0cec8cb5feee37458e9b994cb8.jar" />
+    </item>
+    <item
+        jar="/Users/Daren/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ed727a8d9f247e2050281cb083f1c77b09dcb5cd">
+        <dex dex="/Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/pre-dexed/debug/guava-15.0_0d0b44b67855b53eca045c6a6d23db9eb7ecad84.jar" />
+    </item>
+
+</items>

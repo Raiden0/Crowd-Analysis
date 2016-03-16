@@ -49,7 +49,7 @@ class TasksModel {
 
     private static final String LOG_TAG = "TasksModel";
 
-    private static final String DATASTORE_MANGER_DIR = "data";
+    private static final String DATASTORE_MANAGER_DIR = "data";
     private static final String TASKS_DATASTORE_NAME = "tasks";
 
     private Datastore mDatastore;
@@ -61,14 +61,14 @@ class TasksModel {
     private final Handler mHandler;
     private TodoActivity mListener;
 
-    public TasksModel(Context context) {
+    public TasksModel(Context context, SimpleLocation location) {
 
         this.mContext = context;
 
         // Set up our tasks datastore within its own folder in the applications
         // data directory.
         File path = this.mContext.getApplicationContext().getDir(
-                DATASTORE_MANGER_DIR,
+                DATASTORE_MANAGER_DIR,
                 Context.MODE_PRIVATE
         );
         DatastoreManager manager = new DatastoreManager(path.getAbsolutePath());
@@ -113,9 +113,10 @@ class TasksModel {
     /**
      * Creates a task, assigning an ID.
      * @param task task to create
+     * @param location
      * @return new revision of the document
      */
-    public Task createDocument(Task task) {
+    public Task createDocument(Task task, SimpleLocation location) {
         MutableDocumentRevision rev = new MutableDocumentRevision();
         rev.body = DocumentBodyFactory.create(task.asMap());
         try {

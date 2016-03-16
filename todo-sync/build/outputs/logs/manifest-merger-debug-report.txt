@@ -29,10 +29,6 @@ ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/Andr
 		ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:9:22-78
 uses-sdk
 ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:11:5-13:41
-MERGED from [com.ibm.mobilefirstplatform.clientsdk.android:facebookauthentication:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/facebookauthentication/1.0.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:support-v4:22.2.1] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.ibm.mobilefirstplatform.clientsdk.android:core:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/core/1.0.2/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:13:9-38
 	android:minSdkVersion
@@ -41,10 +37,6 @@ MERGED from [com.ibm.mobilefirstplatform.clientsdk.android:core:1.0.2] /Users/Da
 		INJECTED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml
 application
 ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:15:5-35:19
-MERGED from [com.ibm.mobilefirstplatform.clientsdk.android:facebookauthentication:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/facebookauthentication/1.0.2/AndroidManifest.xml:12:5-15:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.5.0/AndroidManifest.xml:28:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.ibm.mobilefirstplatform.clientsdk.android:core:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/core/1.0.2/AndroidManifest.xml:13:5-16:19
 	android:label
 		ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:18:9-41
 	android:allowBackup
@@ -79,7 +71,3 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:32:17-77
 	android:name
 		ADDED from /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/AndroidManifest.xml:32:27-74
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.ibm.mobilefirstplatform.clientsdk.android:core:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/core/1.0.2/AndroidManifest.xml:11:5-76
-	android:name
-		ADDED from [com.ibm.mobilefirstplatform.clientsdk.android:core:1.0.2] /Users/Daren/AndroidStudioProjects/sync-android/sample/todo-sync/build/intermediates/exploded-aar/com.ibm.mobilefirstplatform.clientsdk.android/core/1.0.2/AndroidManifest.xml:11:22-73

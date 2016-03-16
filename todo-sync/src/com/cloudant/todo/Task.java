@@ -36,22 +36,29 @@ import java.util.Map;
 
 public class Task {
 
-    private Task() {}
-
-    public Task(String desc) {
-        this.setDescription(desc);
-        //this.setCompleted(false);
-        this.setType(DOC_TYPE);
-    }
-
     // this is the revision in the database representing this task
     private BasicDocumentRevision rev;
+    static final String DOC_TYPE = "Feature";
+    private String type = DOC_TYPE;
+    private String geometry = "Point";
+    private String description;
+    double longitude ;//= location.getLongitude();
+    double latitude ;//= location.getLatitude();
+
+    private Task() {}
+
+    public Task(String desc, SimpleLocation location) {
+        this.setDescription(desc);
+        this.setType(DOC_TYPE);
+        this.setLongitude(location.getLongitude());
+        this.setLatitude(location.getLatitude());
+    }
+
+
     public BasicDocumentRevision getDocumentRevision() {
         return rev;
     }
 
-    static final String DOC_TYPE = "Feature";
-    private String type = DOC_TYPE;
     public String getType() {
         return type;
     }
@@ -59,25 +66,37 @@ public class Task {
         this.type = type;
     }
 
-    public JSONObject geometry;
-    public JSONArray coordonnates;
 
-
-    /*private boolean completed;
-    public boolean isCompleted() {
-        return this.completed;
+    public String getGeometry() {
+        return geometry;
     }
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }*/
+    public void setGeometry(String geometry) {
+        this.geometry = geometry;
+    }
 
-    private String description;
     public String getDescription() {
         return this.description;
     }
     public void setDescription(String desc) {
         this.description = desc;
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
 
     @Override
     public String toString() {
@@ -90,10 +109,11 @@ public class Task {
         t.rev = rev;
         // this could also be done by a fancy object mapper
         Map<String, Object> map = rev.asMap();
-        if(map.containsKey("type") && map.get("type").equals(Task.DOC_TYPE)) {
-            t.setType((String) map.get("type"));
-            //t.setCompleted((Boolean) map.get("completed"));
-            t.setDescription((String) map.get("description"));
+        if(map.containsKey("tipe") && map.get("tipe").equals(Task.DOC_TYPE)) {
+            t.setType((String) map.get("tipe"));
+            t.setGeometry((String) map.get("geometry"));
+            //t.setLatitude((Double) map.get("latitude"));
+            //t.setLongitude((Double) map.get("longitude"));
             return t;
         }
         return null;
@@ -102,19 +122,12 @@ public class Task {
     public Map<String, Object> asMap() {
         // this could also be done by a fancy object mapper
         HashMap<String, Object> map = new HashMap<String, Object>();
-        map.put("type", type);
-        //map.put("completed", completed);
+        map.put("tipe", type);
+        map.put("geometry", geometry);
+        map.put("latitude", latitude);
+        map.put("longitude", longitude);
         map.put("description", description);
         return map;
-    }
-
-    public void writeJSON(JSONObject object) {
-        object = new JSONObject();
-        try {
-            object.put("type", "Point");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 
 }

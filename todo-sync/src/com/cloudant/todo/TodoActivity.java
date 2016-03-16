@@ -60,6 +60,8 @@ public class TodoActivity
     private static TasksModel sTasks;
     private TaskAdapter mTaskAdapter;
 
+    private SimpleLocation location;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(LOG_TAG, "onCreate()");
@@ -74,10 +76,15 @@ public class TodoActivity
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         sharedPref.registerOnSharedPreferenceChangeListener(this);
 
+        location = new SimpleLocation(this);
+        if (!location.hasLocationEnabled()) {
+            SimpleLocation.openSettings(this);
+        }
+
         // Protect creation of static variable.
         if (sTasks == null) {
             // Model needs to stay in existence for lifetime of app.
-            this.sTasks = new TasksModel(this.getApplicationContext());
+            this.sTasks = new TasksModel(this.getApplicationContext(), location);
         }
 
         // Register this activity as the listener to replication updates
@@ -86,6 +93,19 @@ public class TodoActivity
 
         // Load the tasks from the model
         this.reloadTasksFromModel();
+
+        findViewById(R.id.getloc).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                final double latitude = location.getLatitude();
+                final double longitude = location.getLongitude();
+
+                // TODO
+                Toast.makeText(getApplicationContext(), latitude+"\n"+longitude, Toast.LENGTH_LONG).show();
+            }
+
+        });
 
     }
 
@@ -119,9 +139,9 @@ public class TodoActivity
         this.setListAdapter(this.mTaskAdapter);
     }
 
-    private void createNewTask(String desc) {
-        Task t = new Task(desc);
-        sTasks.createDocument(t);
+    private void createNewTask(String desc, SimpleLocation location) {
+        Task t = new Task(desc, location);
+        sTasks.createDocument(t,location);
         reloadTasksFromModel();
     }
 
@@ -235,7 +255,7 @@ public class TodoActivity
     protected Dialog onCreateDialog(int id, Bundle args) {
         switch (id) {
             case DIALOG_NEW_TASK:
-                return createNewTaskDialog();
+                return createNewTaskDialog(location);
             case DIALOG_PROGRESS:
                 return createProgressDialog();
             default:
@@ -271,7 +291,7 @@ public class TodoActivity
         return builder.create();
     }
 
-    public Dialog createNewTaskDialog() {
+    public Dialog createNewTaskDialog(final SimpleLocation simpleLocation) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View v = this.getLayoutInflater().inflate(R.layout.dialog_new_task, null);
         final EditText description = (EditText) v.findViewById(R.id.new_task_desc);
@@ -281,7 +301,7 @@ public class TodoActivity
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 if (description.getText().length() > 0) {
-                    createNewTask(description.getText().toString());
+                    createNewTask(description.getText().toString(), simpleLocation);
                     description.getText().clear();
                 } else {
                     Toast.makeText(getApplicationContext(),
@@ -373,4 +393,24 @@ public class TodoActivity
             mActionMode = null;
         }
     };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // make the device update its location
+        location.beginUpdates();
+
+        // ...
+    }
+
+    @Override
+    protected void onPause() {
+        // stop location updates (saves battery)
+        location.endUpdates();
+
+        // ...
+
+        super.onPause();
+    }
 }
